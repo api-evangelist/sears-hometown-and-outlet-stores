@@ -1,4 +1,5 @@
 aid: sears-hometown-and-outlet-stores
+name: "Sears Hometown and Outlet Stores"
 specificationVersion: '0.23'
 accessModel:
   pricing: unknown
