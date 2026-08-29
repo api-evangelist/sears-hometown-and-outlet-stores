@@ -1,0 +1,83 @@
+generated: '2026-08-28'
+method: probed
+source: >-
+  Direct HTTPS probes of the /.well-known/ namespace on every host associated with
+  Sears Hometown and Outlet Stores, Inc. The company's own domain, shos.com, no longer
+  resolves to company infrastructure — it presents a wildcard *.hostgator.com TLS
+  certificate and every path returns a parked-host error, so no /.well-known/ document
+  is served anywhere.
+note: >-
+  RECORDED ABSENCE, NOT A PRESENCE. No path returned a 200 carrying a real document, so
+  NO WellKnown or SecurityTxt pointer is emitted into apis.yml. Sears Hometown and Outlet
+  Stores, Inc. was acquired by Transform Holdco in October 2019, filed Chapter 11 in
+  December 2022, and converted to a Chapter 7 liquidation in February 2023. The hosts
+  below are what remains: a parked registrar page (shos.com) and two names that no longer
+  resolve at all (developer.shos.com, api.shos.com). The domain
+  www.sears-hometown-and-outlet-stores.com, which apis.yml previously carried as this
+  company's Website, has never resolved and has been removed as a dead pointer.
+hosts:
+- host: www.shos.com
+  note: >-
+    Resolves, but serves a wildcard *.hostgator.com certificate (SAN: *.hostgator.com,
+    hostgator.com) that does not match the requested name. With certificate verification
+    disabled the root redirects to /404.html; every /.well-known/ path answers HTTP 406
+    "Not Acceptable" from the parking host. This is a parked/expired domain, not a company
+    surface.
+  documents:
+  - path: /.well-known/security.txt
+    status: 406
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 406
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 406
+    file: null
+  - path: /.well-known/api-catalog
+    status: 406
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 406
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 406
+    file: null
+  - path: /.well-known/agent.json
+    status: 406
+    file: null
+- host: developer.shos.com
+  note: DNS does not resolve (no A/AAAA record). No connection was established.
+  documents:
+  - path: /.well-known/security.txt
+    status: null
+    file: null
+    result: no-dns
+  - path: /.well-known/agent-card.json
+    status: null
+    file: null
+    result: no-dns
+- host: api.shos.com
+  note: DNS does not resolve (no A/AAAA record). No connection was established.
+  documents:
+  - path: /.well-known/security.txt
+    status: null
+    file: null
+    result: no-dns
+  - path: /.well-known/agent-card.json
+    status: null
+    file: null
+    result: no-dns
+- host: www.sears-hometown-and-outlet-stores.com
+  note: >-
+    NXDOMAIN — this name has never resolved. It was a slug-shaped guess carried in
+    apis.yml as the company Website and has been removed.
+  documents:
+  - path: /.well-known/security.txt
+    status: null
+    file: null
+    result: nxdomain
+summary:
+  hosts_probed: 4
+  documents_probed: 15
+  documents_served: 0
+  pointer_emitted: false
