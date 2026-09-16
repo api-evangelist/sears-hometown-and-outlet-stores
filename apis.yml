@@ -1,5 +1,5 @@
 aid: sears-hometown-and-outlet-stores
-name: "Sears Hometown and Outlet Stores"
+name: Sears Hometown and Outlet Stores
 deliveryModel:
   model: unknown
   open_source: false
@@ -27,10 +27,9 @@ accessModel:
   generated: '2026-07-22'
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/sears-hometown-and-outlet-stores.png
-url: 
-  https://raw.githubusercontent.com/api-evangelist/sears-hometown-and-outlet-stores/refs/heads/main/apis.yml
+url: https://raw.githubusercontent.com/api-evangelist/sears-hometown-and-outlet-stores/refs/heads/main/apis.yml
 created: '2026-03-24'
-modified: '2026-08-28'
+modified: '2026-09-15'
 maintainers:
 - FN: API Evangelist
   email: info@apievangelist.com
@@ -42,24 +41,22 @@ tags:
 - Lawn and Garden
 - Franchise Retail
 - Defunct Company
+- Defunct
 apis: []
 common:
-  - type: LinkedIn
-    url: https://www.linkedin.com/company/sears-hometown-and-outlet-stores-inc-
-description: >-
-  Sears Hometown and Outlet Stores, Inc. (NASDAQ: SHOS) was a national retailer of home
-  appliances, lawn and garden equipment, tools and hardware, spun off from Sears Holdings
-  in October 2012 and operating two segments: Sears Hometown and Hardware, a largely
-  franchised network of smaller-format stores in rural and suburban markets, and Sears
-  Outlet, which sold new, one-of-a-kind, out-of-carton, discontinued, obsolete, used,
-  reconditioned, overstocked and scratch-and-dent merchandise. The company was acquired
-  by Transform Holdco (Transformco) and ESL Investments in October 2019, at which point
-  the Sears Outlet business was sold on to Franchise Group and rebranded American Freight.
-  Sears Hometown filed for Chapter 11 in December 2022 and converted to a Chapter 7
-  liquidation in February 2023. The company is defunct: it never operated a public
-  developer program, and its corporate domain shos.com is now a parked registrar page
-  serving a wildcard *.hostgator.com certificate and a 404, so there is no API surface,
-  documentation, or /.well-known/ document left to profile.
+- type: LinkedIn
+  url: https://www.linkedin.com/company/sears-hometown-and-outlet-stores-inc-
+description: 'Sears Hometown and Outlet Stores, Inc. (NASDAQ: SHOS) was a national retailer of home appliances,
+  lawn and garden equipment, tools and hardware, spun off from Sears Holdings in October 2012 and operating
+  two segments: Sears Hometown and Hardware, a largely franchised network of smaller-format stores in
+  rural and suburban markets, and Sears Outlet, which sold new, one-of-a-kind, out-of-carton, discontinued,
+  obsolete, used, reconditioned, overstocked and scratch-and-dent merchandise. The company was acquired
+  by Transform Holdco (Transformco) and ESL Investments in October 2019, at which point the Sears Outlet
+  business was sold on to Franchise Group and rebranded American Freight. Sears Hometown filed for Chapter
+  11 in December 2022 and converted to a Chapter 7 liquidation in February 2023. The company is defunct:
+  it never operated a public developer program, and its corporate domain shos.com is now a parked registrar
+  page serving a wildcard *.hostgator.com certificate and a 404, so there is no API surface, documentation,
+  or /.well-known/ document left to profile.'
 x-enrichment:
   date: '2026-08-28'
   status: minimal
@@ -68,17 +65,15 @@ x-enrichment:
 x-coverage:
   state: none
   reason: defunct
-  detail: >-
-    Sears Hometown and Outlet Stores was liquidated under Chapter 7 in February 2023 and
-    its corporate domain shos.com is now a parked HostGator page — it presents a wildcard
-    *.hostgator.com TLS certificate, redirects the root to /404.html, and answers HTTP 406
-    on every path — while developer.shos.com and api.shos.com no longer resolve at all.
+  detail: Sears Hometown and Outlet Stores was liquidated under Chapter 7 in February 2023 and its corporate
+    domain shos.com is now a parked HostGator page — it presents a wildcard *.hostgator.com TLS certificate,
+    redirects the root to /404.html, and answers HTTP 406 on every path — while developer.shos.com and
+    api.shos.com no longer resolve at all.
   evidence:
   - url: https://www.shos.com/
     status: 200
-    note: >-
-      TLS name mismatch (*.hostgator.com); with verification disabled the root redirects
-      to https://www.shos.com/404.html — a parked-domain soft-404, not a company site.
+    note: TLS name mismatch (*.hostgator.com); with verification disabled the root redirects to https://www.shos.com/404.html
+      — a parked-domain soft-404, not a company site.
   - url: https://www.shos.com/.well-known/security.txt
     status: 406
   - url: https://www.shos.com/robots.txt
@@ -91,15 +86,12 @@ x-coverage:
     note: DNS does not resolve (NXDOMAIN).
   - url: https://www.sears-hometown-and-outlet-stores.com/
     status: 0
-    note: >-
-      NXDOMAIN — previously carried in this file as the company Website; a slug-shaped
-      guess that has never resolved. Removed as a dead pointer.
+    note: NXDOMAIN — previously carried in this file as the company Website; a slug-shaped guess that
+      has never resolved. Removed as a dead pointer.
   - url: https://www.searsoutlet.com/
     status: 200
-    note: >-
-      Redirects to https://www.sears.com/ — the former Sears Outlet brand domain is now
-      controlled by Transformco, a different company, so it is not recorded here as this
-      provider's website.
+    note: Redirects to https://www.sears.com/ — the former Sears Outlet brand domain is now controlled
+      by Transformco, a different company, so it is not recorded here as this provider's website.
   - url: https://www.linkedin.com/company/sears-hometown-and-outlet-stores-inc-
     status: 200
     note: Verified live — the only surviving pointer for this company.
