@@ -1,7 +1,9 @@
 ---
 title: Newly Proposed Amendments to the Delaware General ...
 url: https://www.stblaw.com/about-us/publications/view/2025/02/19/newly-proposed-amendments-to-the-delaware-general-corporation-law
-date: '2026-05-25'
+published: '2025-02-19'
+date_basis: url-derived
+harvested: '2026-05-25'
 query: '"Sears Hometown & Outlet Stores" press release artificial intelligence'
 position: 5
 source: serpapi-google

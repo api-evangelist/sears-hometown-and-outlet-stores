@@ -1,7 +1,9 @@
 ---
 title: Advertising Paper.docx - In 1910 S. Duncan Black & Alonzo...
 url: https://www.coursehero.com/file/59959320/Advertising-Paperdocx/
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Sears Hometown & Outlet Stores" press release artificial intelligence'
 position: 4
 source: serpapi-google

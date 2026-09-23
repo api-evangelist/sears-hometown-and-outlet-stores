@@ -1,7 +1,9 @@
 ---
 title: Securities Enforcement and Litigation Update
 url: https://www.sullcrom.com/SullivanCromwell/_Assets/PDFs/Memos/Securities-Enforcement-Litigation-Update-2025.pdf
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Sears Hometown & Outlet Stores" press release artificial intelligence'
 position: 3
 source: serpapi-google
